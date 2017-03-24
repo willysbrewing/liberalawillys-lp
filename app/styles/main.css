@@ -361,7 +361,7 @@ a:hover, a:focus{
 * steps
 */
 .lp-app .steps{
-  padding-top: 25vh;
+  padding-top: 30vh;
 }
 
 /**
@@ -381,7 +381,7 @@ a:hover, a:focus{
 }
 
 .lp-app .content .feat .text{
-  padding: 0px 0;
+  padding: 0;
 }
 
 .lp-app .content .feat .text h3{
@@ -393,7 +393,48 @@ a:hover, a:focus{
   font-weight: lighter;
 }
 
+.lp-app .content .feat ul{
+  padding: 0;
+}
+
+.lp-app .content .feat ul li{
+  float: left;
+  list-style-type: none;
+}
+
+.lp-app .content .feat ul li .btn{
+  height: 50px;
+  padding: 8px 50px;
+  border-radius: 3px;
+}
+
+.lp-app .content .feat ul li .btn.facebook{
+  background: #3b5998;
+  -webkit-mask: url(../images/facebook-logo.svg) center / contain no-repeat;
+}
+
+.lp-app .content .feat ul li .btn.instagram{
+  background: #000000;
+  -webkit-mask: url(../images/instagram-logo.svg) center / contain no-repeat;
+}
+
+.lp-app .content .feat ul li .btn.twitter{
+  background: #00aced;
+  -webkit-mask: url(../images/twitter-logo.svg) center / contain no-repeat;
+}
+
+@media (max-width: 767px) {
+
+  .lp-app .content .feat ul li .btn{
+    height: 40px;
+    padding: 8px 40px;
+  }
+
+}
+
+/* Footer */
 .lp-app .content footer{
+  margin-top: 10vh;
   background-color: #000;
   color: #fff;
   padding: 20px 0;
@@ -404,6 +445,10 @@ a:hover, a:focus{
 }
 
 @media (max-width: 767px) {
+
+  .lp-app .content .feat{
+    padding: 10px 0;
+  }
 
   .lp-app .content .feat .text h3{
     font-size: 40px;

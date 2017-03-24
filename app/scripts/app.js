@@ -38,7 +38,7 @@
               vm.step++;
               $timeout(function(){
                 angular.element(document.getElementsByClassName('content')).css('opacity', 1);
-              }, 100);
+              }, 500);
             }, 500);
           } else {
             vm.step++;
