@@ -99,7 +99,7 @@
           <div class="container">
             <div class="center">
               <h1 style="color: #fff;"><span ng-repeat="part in lp.claim">{{ part }}</span></h1>
-              <img ng-if="lp.step > 2" class="img-responsive center" src="images/willys.svg">
+              <img ng-if="lp.step > 2" class="img-responsive center" alt="willys-logo" src="images/willys.svg">
             </div>
           </div>
         </section>
@@ -109,7 +109,7 @@
 
           <!-- Step 0 -->
           <div class="center">
-            <a href="javascript:void(0)" ng-click="lp.next(0)" class="btn btn-primary btn-fab bg-amber-700"><i class="material-icons">power_settings_new</i></a>
+            <a href="javascript:void(0)" ng-click="lp.next(0)" class="btn btn-primary btn-fab"><i class="material-icons">power_settings_new</i></a>
           </div>
           <!-- ./Step 0 -->
 
@@ -123,7 +123,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-6">
-                  <img class="center img-responsive material-shadow" src="images/liberalawillys.jpg">
+                  <img class="center img-responsive material-shadow" alt="liberalawillys" src="images/liberalawillys.jpg">
                 </div>
                 <div class="col-sm-offset-1 col-sm-5">
                   <div class="text">
@@ -141,7 +141,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-6 col-sm-offset-1 visible-xs">
-                  <img class="center img-responsive material-shadow" src="images/grim.jpg">
+                  <img class="center img-responsive material-shadow" alt="liberalawillys" src="images/grim.jpg">
                 </div>
                 <div class="col-sm-5">
                   <div class="text">
@@ -152,7 +152,7 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-sm-offset-1 hidden-xs">
-                  <img class="center img-responsive material-shadow" src="images/grim.jpg">
+                  <img class="center img-responsive material-shadow" alt="liberalawillys" src="images/grim.jpg">
                 </div>
               </div>
             </div>
@@ -170,6 +170,9 @@
                     <li><a href="https://www.instagram.com/willysbrewing/" class="btn btn-social btn-simple instagram"></a></li>
                     <li><a href="https://twitter.com/WillysBrewing" class="btn btn-social btn-simple twitter"></a></li>
                   </ul>
+                  <div class="margin-20">
+                    <a href="javascript:void(0)" ng-click="lp.freeWillys()" class="center btn btn-raised btn-default btn-lg">{{ lp.game[lp.gameIndex] }}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,6 +193,14 @@
         </section>
         <!-- ./Content -->
 
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <iframe src="https://www.youtube.com/embed/YS2BH_Kx_gc?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
       </div>
       <!-- ./Loaded -->
 
@@ -204,6 +215,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js" /></script>
     <script src="/bower_components/bootstrap-material-design/dist/js/material.js"></script>
     <script src="/bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
     <!-- endbower -->
