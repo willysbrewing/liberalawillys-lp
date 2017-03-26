@@ -15,13 +15,13 @@
         vm.status = 'loading';
         vm.step = 0;
         vm.claim = [' '];
-        vm.game = ['LIBERALA','OK','NOT YET','CASI CASI','SIGUE INTENTANDO', 'YOU KNOW', 'WILLYS', 'AMA LA BIRRA','UN POCO MÁS'];
+        vm.game = ['LIBÉRALA','OK','NOT YET','CASI CASI','SIGUE INTENTANDO', 'YOU KNOW', 'WILLYS', 'AMA LA BIRRA','UN POCO MÁS'];
         vm.gameIndex = 0;
         vm.gameCounter = 0;
 
         $timeout(function(){
           vm.status = 'loaded';
-        }, 2000);
+        }, 1000);
 
         vm.next = function (currentStep) {
           switch(currentStep) {
@@ -51,9 +51,9 @@
         vm.freeWillys = function () {
           if (vm.gameCounter >= 15){
             var modal = angular.element(document.getElementById('modal'));
-            var iframe = angular.element(document.getElementById('modal')).find('iframe');
-            var iframeSrc = iframe[0].getAttribute('src');
-            iframe[0].setAttribute('src', iframeSrc+'&autoplay=1&start=93');
+            //var iframe = angular.element(document.getElementById('modal')).find('iframe');
+            //var iframeSrc = iframe[0].getAttribute('src');
+            //iframe[0].setAttribute('src', iframeSrc+'&autoplay=1&start=93');
             $('#modal').modal('show');
           }
           vm.gameCounter++;

@@ -21,6 +21,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4{
     max-width: 980px;
 }
 
+p {
+  text-align: justify;
+}
+
 a{
     color: #000;
 }
@@ -378,6 +382,7 @@ a:hover, a:focus{
 
 .lp-app .content .feat img{
   border-radius: 3px;
+  margin-top: 20px;
 }
 
 .lp-app .content .feat .text{
@@ -385,7 +390,8 @@ a:hover, a:focus{
 }
 
 .lp-app .content .feat .text h3{
-  font-size: 46px;
+  margin-top: 0px;
+  font-size: 40px;
   font-family: 'Chau Philomene One';
 }
 
@@ -430,6 +436,14 @@ a:hover, a:focus{
     padding: 8px 40px;
   }
 
+  .lp-app .content .feat img{
+    margin-top: 0;
+  }
+
+  .lp-app .content .feat .text h3{
+    margin-top: 20px;
+  }
+
 }
 
 /* Footer */
@@ -457,16 +471,20 @@ a:hover, a:focus{
 }
 
 /* Modal */
-#modal iframe{
+#modal iframe, #modal img{
   width: 100%;
-  min-height: 480px;
+  min-height: 350px;
 }
 
 @media (max-width: 767px) {
 
-  #modal iframe{
+  #modal iframe, #modal img{
     width: 100%;
     min-height: 180px;
+  }
+
+  #modal .modal-dialog.modal-lg{
+    padding-top: 20vh;
   }
 
 }
