@@ -64,7 +64,7 @@
     <!-- endfonts -->
 
   </head>
-  <body ng-app="app" style="background-color: #000;">
+  <body ng-app="app" style="background-color: #fff;">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -98,14 +98,13 @@
         <section class="claim">
           <div class="container">
             <div class="center">
-              <h1 style="color: #fff;"><span ng-repeat="part in lp.claim">{{ part }}</span></h1>
-              <img ng-if="lp.step > 2" class="img-responsive center" alt="willys-logo" src="images/willys.svg">
+              <h1 class="color-black">#LIBERALAWILLYS</h1>
             </div>
           </div>
         </section>
 
         <!-- Steps -->
-        <section class="steps" ng-if="lp.step === 0">
+        <section class="steps" ng-if="false">
 
           <!-- Step 0 -->
           <div class="center">
@@ -117,7 +116,25 @@
         <!-- ./Steps -->
 
         <!-- Content -->
-        <section class="content" ng-show="lp.step > 2">
+        <section class="content" ng-show="lp.step === 0">
+
+          <section class="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="center">
+                    <div class="center">
+                      <img class="img-responsive" style="float:left; position:relative:" alt="willys-logo" src="images/willys.svg">
+                    </div>
+                    <h2>Fiesta Lanzamiento de Willy's en Calvin's Chamberí</h2>
+                    <div class="margin-20">
+                      <a href="https://www.willysbrewing.com/eventos/fiesta-de-inauguracion-willys/" class="center btn btn-raised btn-default btn-lg bg-white color-black">🎉 ¡QUIERO IR! 🎉</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section class="feat">
             <div class="container">
@@ -237,8 +254,7 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js" /></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
     <script src="/bower_components/bootstrap-material-design/dist/js/material.js"></script>
     <script src="/bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
     <!-- endbower -->

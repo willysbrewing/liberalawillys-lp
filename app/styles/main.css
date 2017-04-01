@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #000;
+  background-color: #fff;
   transition: all linear 0.5s;
 }
 
@@ -372,7 +372,7 @@ a:hover, a:focus{
 * conent
 */
 .lp-app .content {
-  opacity: 0;
+  opacity: 1;
   transition: all linear 1s;
 }
 
@@ -442,6 +442,64 @@ a:hover, a:focus{
 
   .lp-app .content .feat .text h3{
     margin-top: 20px;
+  }
+
+}
+
+/* Hero */
+
+.lp-app .content .hero{
+  padding: 60px 0 40px 0;
+  background-image: url('../images/fiesta.jpg');
+  background-size: cover;
+  min-height: 360px;
+  position: relative;
+}
+
+.lp-app .content .hero::before, .lp-app .content .hero::after {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+}
+
+.lp-app .content .hero::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 5s ease;
+}
+
+.lp-app .content .hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+.lp-app .content .hero img{
+  width: 230px;
+  max-width: 230px;
+}
+
+.lp-app .content .hero h2{
+  color: #fff;
+  text-align:center;
+  text-transform:uppercase;
+  font-size: 56px;
+  font-family: 'Chau Philomene One';
+}
+
+.lp-app .content .hero p{
+  color: #fff;
+  text-align:center;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+  .lp-app .content .hero img{
+    width: 100px;
   }
 
 }
